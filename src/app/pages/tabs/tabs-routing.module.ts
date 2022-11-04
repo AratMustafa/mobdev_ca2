@@ -26,7 +26,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../people/people.module').then( m => m.PeoplePageModule)
+            loadChildren: () => import('../species/species.module').then( m => m.SpeciesPageModule)
           }
         ]
       },
@@ -35,7 +35,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../planets/planets.module').then( m => m.PlanetsPageModule)
+            loadChildren: () => import('../starships/starships.module').then( m => m.StarshipsPageModule)
           }
         ]
       }
