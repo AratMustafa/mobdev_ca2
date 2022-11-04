@@ -9,14 +9,14 @@ import { ApiService } from './../../services/api.service';
 })
 export class SpeciesDetailsPage implements OnInit {
 
-  Spece: any;
+  Specie: any;
 
   constructor(private activatedRoute: ActivatedRoute, private api: ApiService) { }
 
   ngOnInit() {
     let id = this.activatedRoute.snapshot.paramMap.get('id');
     this.api.getStarship(id).subscribe(res => {
-    this.spece = res;
+    this.Specie = res;
 
   });
   }

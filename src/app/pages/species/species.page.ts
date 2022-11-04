@@ -5,6 +5,7 @@ import { NavController } from '@ionic/angular';
 import { ApiService } from '../..//services/api.service';
 
 
+
 @Component({
   selector: 'app-species',
   templateUrl: './species.page.html',
@@ -12,7 +13,7 @@ import { ApiService } from '../..//services/api.service';
 })
 export class SpeciesPage implements OnInit {
 
-  people: Observable<any>;
+  species: Observable<any>;
   
   constructor(private navController: NavController, private router: Router, private api: ApiService) { }
 

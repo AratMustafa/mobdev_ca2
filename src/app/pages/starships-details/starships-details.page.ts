@@ -15,8 +15,8 @@ export class StarshipsDetailsPage implements OnInit {
 
   ngOnInit() {
     let id = this.activatedRoute.snapshot.paramMap.get('id');
-    this.api.getStarship(id).subscribe(res => {
-    this.starship = res;
+    this.api.getStarships(id).subscribe(res => {
+    this.Starship = res;
 
   });
   }

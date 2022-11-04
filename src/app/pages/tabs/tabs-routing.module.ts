@@ -22,7 +22,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'people',
+        path: 'species',
         children: [
           {
             path: '',
@@ -31,7 +31,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'planets',
+        path: 'starships',
         children: [
           {
             path: '',
